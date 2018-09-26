@@ -18,6 +18,7 @@ namespace Scalemodels.Models
         [Required]
         public int Scale { get; set; }
 
+        public int ManifacturerId { get; set; }
         [Required]
         public Manifacturer Manifacturer { get; set; }
 

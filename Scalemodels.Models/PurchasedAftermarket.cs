@@ -18,6 +18,8 @@ namespace Scalemodels.Models
         [Required]
         public string ProductName { get; set; }
 
+        public int ManifacturerId { get; set; }
+        [Required]
         public Manifacturer Manifacturer { get; set; }
 
         [Required]
