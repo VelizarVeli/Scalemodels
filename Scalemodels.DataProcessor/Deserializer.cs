@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Newtonsoft.Json;
 using Scalemodels.Data;
+using Scalemodels.DataProcessor.Dto;
 
 namespace Scalemodels.DataProcessor
 {
@@ -11,11 +12,18 @@ namespace Scalemodels.DataProcessor
         private const string FailureMessage = "Invalid Data";
         private const string SuccessMessage = "Record {0} successfully imported.";
 
-        public static string ImportAftermarket(ScalemodelsDbContext context, string jsonString)
+        //public static string ImportAftermarket(ScalemodelsDbContext context, string jsonString)
+        //{
+        //    var sb = new StringBuilder();
+
+        //    var deserializedAftermarket = JsonConvert.DeserializeObject();
+        //}
+
+        public static string ImportManifacturers(ScalemodelsDbContext context, string jsonString)
         {
             var sb = new StringBuilder();
 
-            var deserializedAftermarket = JsonConvert.DeserializeObject()
+            var deserializedManifacturers = JsonConvert.DeserializeObject<ManifacturerDto[]>(jsonString);
         }
 
         private static bool IsValid(object obj)

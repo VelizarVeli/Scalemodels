@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.Models
 {
@@ -14,6 +15,7 @@ namespace Scalemodels.Models
 
         public int ManifacturerId { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
         public ICollection<AvailableModel> AvailableModels { get; set; }

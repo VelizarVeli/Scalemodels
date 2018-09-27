@@ -940,6 +940,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.json": "11.0.2",
           "Scalemodels.Data": "1.0.0"
         },
         "compile": {
