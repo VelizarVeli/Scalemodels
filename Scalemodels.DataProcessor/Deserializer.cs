@@ -19,12 +19,12 @@ namespace Scalemodels.DataProcessor
         //    var deserializedAftermarket = JsonConvert.DeserializeObject();
         //}
 
-        public static string ImportManifacturers(ScalemodelsDbContext context, string jsonString)
-        {
-            var sb = new StringBuilder();
+        ////public static string ImportManifacturers(ScalemodelsDbContext context, string jsonString)
+        ////{
+        ////    var sb = new StringBuilder();
 
-            var deserializedManifacturers = JsonConvert.DeserializeObject<ManifacturerDto[]>(jsonString);
-        }
+        ////    var deserializedManifacturers = JsonConvert.DeserializeObject<ManifacturerDto[]>(jsonString);
+        ////}
 
         private static bool IsValid(object obj)
         {

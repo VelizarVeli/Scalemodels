@@ -13,3 +13,5 @@ C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.App\bin\Debug\netcoreapp2
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.App\obj\Debug\netcoreapp2.0\Scalemodels.App.csprojResolveAssemblyReference.cache
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.App\obj\Debug\netcoreapp2.0\Scalemodels.App.dll
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.App\obj\Debug\netcoreapp2.0\Scalemodels.App.pdb
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.App\bin\Debug\netcoreapp2.0\Scalemodels.DataProcessor.dll
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.App\bin\Debug\netcoreapp2.0\Scalemodels.DataProcessor.pdb

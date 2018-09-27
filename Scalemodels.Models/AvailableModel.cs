@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models.Enums;
 
 namespace Scalemodels.Models
 {
@@ -9,7 +8,7 @@ namespace Scalemodels.Models
     {
         public AvailableModel()
         {
-            this.UsedAftermarket = new List<PurchasedAftermarket>();
+            this.PurchasedAftermarket = new List<ModelsAftermarket>();
         }
 
         [Key]
@@ -40,6 +39,6 @@ namespace Scalemodels.Models
 
         public string Info { get; set; }
 
-        public ICollection<PurchasedAftermarket> UsedAftermarket { get; set; }
+        public ICollection<ModelsAftermarket> PurchasedAftermarket { get; set; }
     }
 }

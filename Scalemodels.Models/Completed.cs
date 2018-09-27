@@ -8,7 +8,7 @@ namespace Scalemodels.Models
     {
         public Completed()
         {
-            this.ModelShows = new List<ModelShow>();
+            this.ModelShowsParticipatedIn = new List<CompletedModelShow>();
         }
 
         [Key]
@@ -31,6 +31,6 @@ namespace Scalemodels.Models
 
         public string BestCompanyOffer { get; set; }
 
-        public ICollection<ModelShow> ModelShows { get; set; }
+        public ICollection<CompletedModelShow> ModelShowsParticipatedIn { get; set; }
     }
 }
