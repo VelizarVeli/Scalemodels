@@ -11,25 +11,16 @@ namespace Scalemodels.App
         {
             using (var context = new ScalemodelsDbContext())
             {
-                context.Database.EnsureDeleted();
-                context.Database.EnsureCreated();
+                //  context.Database.EnsureDeleted();
+                //  context.Database.EnsureCreated();
 
-                //ImportEntities(context);
+                ImportEntities(context);
             }
         }
 
-        //private static void ImportEntities(ScalemodelsDbContext context, string baseDir = @"..\Datasets\")
-        //{
-        //    const string exportDir = "./ImportResults/";
-
-        //    var aftermarket = Deserializer.ImportAftermarket(context, File.ReadAllText(baseDir + "Aftermarket.json"));
-        //    PrintAndExportEntitiesToFile(aftermarket, exportDir + "Aftermarket.txt");
-        //}
-
-        private static void PrintAndExportEntitiesToFile(string entityOutput, string outputPath)
+        private static void ImportEntities(ScalemodelsDbContext context, string baseDir = @"..\Datasets\")
         {
-            Console.WriteLine(entityOutput);
-            File.WriteAllText(outputPath, entityOutput.TrimEnd());
+            var manifaturers = Deserializer.ImportManifacturers(context, File.ReadAllText(baseDir + "Manifacturers.json"));
         }
     }
 }
