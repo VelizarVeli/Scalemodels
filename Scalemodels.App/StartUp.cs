@@ -11,8 +11,8 @@ namespace Scalemodels.App
         {
             using (var context = new ScalemodelsDbContext())
             {
-                //  context.Database.EnsureDeleted();
-                //  context.Database.EnsureCreated();
+                 context.Database.EnsureDeleted();
+                 context.Database.EnsureCreated();
 
                 ImportEntities(context);
             }
@@ -20,7 +20,8 @@ namespace Scalemodels.App
 
         private static void ImportEntities(ScalemodelsDbContext context, string baseDir = @"..\Datasets\")
         {
-            var manifaturers = Deserializer.ImportManifacturers(context, File.ReadAllText(baseDir + "Manifacturers.json"));
+            Deserializer.ImportManifacturers(context, File.ReadAllText(baseDir + "Manifacturers.json"));
+            Deserializer.ImportAftermarket(context, File.ReadAllText(baseDir + "Aftermarket.json"));
         }
     }
 }

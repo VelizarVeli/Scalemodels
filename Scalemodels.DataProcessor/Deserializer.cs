@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
-using AutoMapper;
-using Microsoft.EntityFrameworkCore.Storage;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using Scalemodels.Data;
 using Scalemodels.DataProcessor.Dto;
 using Scalemodels.Models;
@@ -17,12 +17,53 @@ namespace Scalemodels.DataProcessor
         private const string FailureMessage = "Invalid Data";
         private const string SuccessMessage = "Record {0} successfully imported.";
 
-        //public static string ImportAftermarket(ScalemodelsDbContext context, string jsonString)
-        //{
-        //    var sb = new StringBuilder();
+        public static string ImportAftermarket(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedAftermarket = JsonConvert.DeserializeObject<PurchasedAftermarketDto[]>(jsonString,
+                new IsoDateTimeConverter { DateTimeFormat = "dd.MM.yyyy" });
 
-        //    var deserializedAftermarket = JsonConvert.DeserializeObject();
-        //}
+            var validAftermarketItems = new List<PurchasedAftermarket>();
+
+
+            foreach (var aftermarketDto in deserializedAftermarket)
+            {
+                if (!IsValid(aftermarketDto))
+                {
+                    continue;
+                }
+
+                var manifacturer = context.Manifacturers
+                    .FirstOrDefault(m => m.Name == aftermarketDto.Manifacturer);
+
+                if (manifacturer == null)
+                {
+                    manifacturer = new Manifacturer
+                    {
+                        Name = aftermarketDto.Manifacturer
+                    };
+                    context.Manifacturers.Add(manifacturer);
+                    context.SaveChanges();
+                }
+
+                var aftermarket = new PurchasedAftermarket
+                {
+                    ProductName = aftermarketDto.ProductName,
+                    Manifacturer = manifacturer,
+                    Price = aftermarketDto.Price,
+                    Category = aftermarketDto.Category,
+                    DateOfPurchase = aftermarketDto.DateOfPurchase,
+                    FactoryNumber = aftermarketDto.FactoryNumber,
+                    Placement = aftermarketDto.Placement
+                };
+
+                validAftermarketItems.Add(aftermarket);
+            }
+
+            context.PurchasedAftermarkets.AddRange(validAftermarketItems);
+            context.SaveChanges();
+
+            return "All Good!";
+        }
 
         public static string ImportManifacturers(ScalemodelsDbContext context, string jsonString)
         {

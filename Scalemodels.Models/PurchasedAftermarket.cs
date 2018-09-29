@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models.Enums;
 
 namespace Scalemodels.Models
 {
@@ -23,7 +22,7 @@ namespace Scalemodels.Models
         public Manifacturer Manifacturer { get; set; }
 
         [Required]
-        [Range(typeof(decimal), "0.01", "79228162514264337593543950335")]
+        [Range(typeof(decimal), "0.00", "79228162514264337593543950335")]
         public decimal Price { get; set; }
 
         [Required]
@@ -31,7 +30,7 @@ namespace Scalemodels.Models
 
         public string FactoryNumber { get; set; }
 
-        public Category Category { get; set; }
+        public string Category { get; set; }
 
         public string Placement { get; set; }
 
