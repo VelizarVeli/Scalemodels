@@ -17,6 +17,41 @@ namespace Scalemodels.DataProcessor
         private const string FailureMessage = "Invalid Data";
         private const string SuccessMessage = "Record {0} successfully imported.";
 
+        public static string ImportWishList(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedWishList = JsonConvert.DeserializeObject<WishListDto[]>(jsonString);
+
+            var validWishListItems = new  HashSet<WishList>();
+
+            foreach (var wishListDto in deserializedWishList)
+            {
+                var manifacturer = context.Manifacturers.FirstOrDefault(m => m.Name == wishListDto.Manifacturer);
+
+                if (manifacturer == null)
+                {
+                    manifacturer = new Manifacturer
+                    {
+                        Name = wishListDto.Manifacturer
+                    };
+                    context.Manifacturers.Add(manifacturer);
+                    context.SaveChanges();
+                }
+
+                var wishList = new WishList
+                {
+                    Name = wishListDto.Name,
+                    Manifacturer = manifacturer,
+                    FactoryNumber = wishListDto.FactoryNumber
+                };
+
+                validWishListItems.Add(wishList);
+            }
+
+            context.WishListModels.AddRange(validWishListItems);
+            context.SaveChanges();
+            return "All good";
+        }
+
         public static string ImportAftermarket(ScalemodelsDbContext context, string jsonString)
         {
             var deserializedAftermarket = JsonConvert.DeserializeObject<PurchasedAftermarketDto[]>(jsonString,

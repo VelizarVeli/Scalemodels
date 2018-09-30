@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Scalemodels.Data;
 using Scalemodels.DataProcessor;
 
@@ -11,8 +10,8 @@ namespace Scalemodels.App
         {
             using (var context = new ScalemodelsDbContext())
             {
-                 context.Database.EnsureDeleted();
-                 context.Database.EnsureCreated();
+                context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
 
                 ImportEntities(context);
             }
@@ -22,6 +21,7 @@ namespace Scalemodels.App
         {
             Deserializer.ImportManifacturers(context, File.ReadAllText(baseDir + "Manifacturers.json"));
             Deserializer.ImportAftermarket(context, File.ReadAllText(baseDir + "Aftermarket.json"));
+            Deserializer.ImportWishList(context, File.ReadAllText(baseDir + "WishList.json"));
         }
     }
 }

@@ -11,6 +11,7 @@ namespace Scalemodels.Models
             this.CompletedModels = new List<Completed>();
             this.PurchasedAftermarketItems = new List<PurchasedAftermarket>();
             this.StartedModels = new List<StartedModel>();
+            this.WishListModels = new List<WishList>();
         }
 
         public int ManifacturerId { get; set; }
@@ -25,5 +26,7 @@ namespace Scalemodels.Models
         public ICollection<PurchasedAftermarket> PurchasedAftermarketItems { get; set; }
 
         public ICollection<StartedModel> StartedModels { get; set; }
+
+        public ICollection<WishList> WishListModels { get; set; }
     }
 }
