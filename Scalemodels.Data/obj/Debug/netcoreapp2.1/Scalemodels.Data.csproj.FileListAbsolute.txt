@@ -10,3 +10,5 @@ C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.csproj.CopyComplete
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.dll
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.pdb
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Data.runtimeconfig.json
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Data.runtimeconfig.dev.json

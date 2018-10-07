@@ -22,6 +22,7 @@ namespace Scalemodels.App
             Deserializer.ImportManifacturers(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\Manifacturers.json"));
             Deserializer.ImportAftermarket(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\Aftermarket.json"));
             Deserializer.ImportWishList(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\WishList.json"));
+            Deserializer.ImportVarnishes(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\Varnishes.json"));
         }
     }
 }

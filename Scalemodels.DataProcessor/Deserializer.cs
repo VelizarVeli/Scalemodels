@@ -140,6 +140,43 @@ namespace Scalemodels.DataProcessor
             return result;
         }
 
+        public static string ImportVarnishes(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedVarnishes = JsonConvert.DeserializeObject<VarnishDto[]>(jsonString,
+                new IsoDateTimeConverter { DateTimeFormat = "dd.MM.yyyy" });
+
+            var validVarnishes = new HashSet<Varnish>();
+
+            foreach (var varnishDto in deserializedVarnishes)
+            {
+                var manifacturer = context.Manifacturers.FirstOrDefault(m => m.Name == varnishDto.Manifacturer);
+
+                if (manifacturer == null)
+                {
+                    manifacturer = new Manifacturer
+                    {
+                        Name = varnishDto.Manifacturer
+                    };
+                    context.Manifacturers.Add(manifacturer);
+                    context.SaveChanges();
+                }
+
+                var varnish = new Varnish
+                {
+                    Name = varnishDto.Name,
+                    Manifacturer = manifacturer,
+                    Price = varnishDto.Price,
+                    DateOfPurchase = varnishDto.DateOfPurchase
+                };
+
+                validVarnishes.Add(varnish);
+            }
+
+            context.Varnishes.AddRange(validVarnishes);
+            context.SaveChanges();
+            return "All good";
+        }
+
         public static string ImportModelShows(ScalemodelsDbContext context, string jsonString)
         {
             var deserializedModelShows = JsonConvert.DeserializeObject<ModelShowDto[]>(jsonString, new JsonSerializerSettings()
