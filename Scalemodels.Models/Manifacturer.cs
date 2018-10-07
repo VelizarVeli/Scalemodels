@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.Models
 {
-   public class Manifacturer
+    public class Manifacturer : BaseModel<int>
     {
         public Manifacturer()
         {
@@ -13,8 +13,6 @@ namespace Scalemodels.Models
             this.StartedModels = new List<StartedModel>();
             this.WishListModels = new List<WishList>();
         }
-
-        public int ManifacturerId { get; set; }
 
         [Required]
         public string Name { get; set; }

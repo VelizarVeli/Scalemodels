@@ -140,6 +140,48 @@ namespace Scalemodels.DataProcessor
             return result;
         }
 
+        public static string ImportModelShows(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedModelShows = JsonConvert.DeserializeObject<ModelShowDto[]>(jsonString, new JsonSerializerSettings()
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            });
+
+            var sb = new StringBuilder();
+
+            var validModelShows = new List<ModelShow>();
+            foreach (var modelShowDto in deserializedModelShows)
+            {
+                if (!IsValid(modelShowDto))
+                {
+                    continue;
+                }
+
+            //    var categories = modelShowDto.Categories.Select(s => new ModelShowCategory
+            //        {
+            //            ModelShow = context.ModelShows.SingleOrDefault(sc => sc.Categories == s.CategoryId)
+            //        })
+            //        .ToArray();
+
+            //    var train = new Train
+            //    {
+            //        TrainNumber = trainDto.TrainNumber,
+            //        Type = type,
+            //        TrainSeats = trainSeats
+            //    };
+
+            //    validTrains.Add(train);
+
+            //    sb.AppendLine(string.Format(SuccessMessage, trainDto.TrainNumber));
+            }
+
+            //context.Trains.AddRange(validTrains);
+            context.SaveChanges();
+
+            var result = sb.ToString();
+            return result;
+        }
+
         private static bool IsValid(object obj)
         {
             var validationContext = new ValidationContext(obj);

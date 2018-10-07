@@ -21,6 +21,7 @@ namespace Scalemodels.Data
         public DbSet<Manifacturer> Manifacturers { get; set; }
         public DbSet<PurchasedAftermarket> PurchasedAftermarkets { get; set; }
         public DbSet<WishList> WishListModels { get; set; }
+        public DbSet<ModelShowCategory> ModelShowCategories { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,6 +1,6 @@
 ﻿namespace Scalemodels.Models
 {
-    public class Weathering
+    public class Weathering : BaseModel<int>
     {
     }
 }

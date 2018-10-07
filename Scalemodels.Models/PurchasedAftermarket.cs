@@ -4,15 +4,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.Models
 {
-   public class PurchasedAftermarket
+   public class PurchasedAftermarket : BaseModel<int>
     {
         public PurchasedAftermarket()
         {
             this.Models = new List<ModelsAftermarket>();
         }
-
-        [Key]
-        public int ItemId { get; set; }
 
         [Required]
         public string ProductName { get; set; }

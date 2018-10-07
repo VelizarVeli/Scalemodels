@@ -1,4 +1,3 @@
-C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.csprojResolveAssemblyReference.cache
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.csproj.CoreCompileInputs.cache
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.AssemblyInfoInputs.cache
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.AssemblyInfo.cs
@@ -7,3 +6,6 @@ C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\bin\Debug\netcorea
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\bin\Debug\netcoreapp2.0\Scalemodels.Models.pdb
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.dll
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.pdb
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\obj\Debug\netcoreapp2.0\Scalemodels.Models.csprojAssemblyReference.cache
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\bin\Debug\netcoreapp2.0\Scalemodels.Models.runtimeconfig.json
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Models\bin\Debug\netcoreapp2.0\Scalemodels.Models.runtimeconfig.dev.json

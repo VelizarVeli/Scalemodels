@@ -1,0 +1,12 @@
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Data.deps.json
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Data.dll
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Data.pdb
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Models.dll
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\bin\Debug\netcoreapp2.1\Scalemodels.Models.pdb
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.csprojAssemblyReference.cache
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.csproj.CoreCompileInputs.cache
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.AssemblyInfoInputs.cache
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.AssemblyInfo.cs
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.csproj.CopyComplete
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.dll
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.Data\obj\Debug\netcoreapp2.1\Scalemodels.Data.pdb

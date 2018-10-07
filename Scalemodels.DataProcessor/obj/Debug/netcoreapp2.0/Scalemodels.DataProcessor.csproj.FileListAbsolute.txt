@@ -10,4 +10,5 @@ C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\bin\Debug\n
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\bin\Debug\netcoreapp2.0\Scalemodels.Models.dll
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\bin\Debug\netcoreapp2.0\Scalemodels.Data.pdb
 C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\bin\Debug\netcoreapp2.0\Scalemodels.Models.pdb
-C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\obj\Debug\netcoreapp2.0\Scalemodels.DataProcessor.csprojResolveAssemblyReference.cache
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\obj\Debug\netcoreapp2.0\Scalemodels.DataProcessor.csprojAssemblyReference.cache
+C:\Users\Google\Documents\Proj\Scalemodels\Scalemodels.DataProcessor\obj\Debug\netcoreapp2.0\Scalemodels.DataProcessor.csproj.CopyComplete

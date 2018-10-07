@@ -1,6 +1,6 @@
 ﻿namespace Scalemodels.Models
 {
-    public class Varnish
+    public class Varnish : BaseModel<int>
     {
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Scalemodels.Models
 {
-    public class Instrument
+    public class Instrument : BaseModel<int>
     {
     }
 }
