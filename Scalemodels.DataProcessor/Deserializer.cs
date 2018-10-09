@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -21,7 +20,7 @@ namespace Scalemodels.DataProcessor
         {
             var deserializedWishList = JsonConvert.DeserializeObject<WishListDto[]>(jsonString);
 
-            var validWishListItems = new  HashSet<WishList>();
+            var validWishListItems = new HashSet<WishList>();
 
             foreach (var wishListDto in deserializedWishList)
             {
@@ -177,6 +176,50 @@ namespace Scalemodels.DataProcessor
             return "All good";
         }
 
+        public static string ImportTools(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedTools = JsonConvert.DeserializeObject<ToolDto[]>(jsonString,
+                new IsoDateTimeConverter { DateTimeFormat = "dd.MM.yyyy" });
+
+            var validTools = new HashSet<Tool>();
+
+            foreach (var toolDto in deserializedTools)
+            {
+                var manifacturer = context.Manifacturers.FirstOrDefault(m => m.Name == toolDto.Manifacturer);
+
+                if (toolDto.Manifacturer == null)
+                {
+                }
+                else
+                {
+                    if (manifacturer == null)
+                    {
+                        manifacturer = new Manifacturer
+                        {
+                            Name = toolDto.Manifacturer
+                        };
+                        context.Manifacturers.Add(manifacturer);
+                        context.SaveChanges();
+                    }
+                }
+
+                var tool = new Tool
+                {
+                    Name = toolDto.Name,
+                    Manifacturer = manifacturer,
+                    Price = toolDto.Price,
+                    DateOfPurchase = toolDto.DateOfPurchase,
+                    Description = toolDto.Description
+                };
+
+                validTools.Add(tool);
+            }
+
+            context.Tools.AddRange(validTools);
+            context.SaveChanges();
+            return "All good";
+        }
+
         public static string ImportModelShows(ScalemodelsDbContext context, string jsonString)
         {
             var deserializedModelShows = JsonConvert.DeserializeObject<ModelShowDto[]>(jsonString, new JsonSerializerSettings()
@@ -194,22 +237,22 @@ namespace Scalemodels.DataProcessor
                     continue;
                 }
 
-            //    var categories = modelShowDto.Categories.Select(s => new ModelShowCategory
-            //        {
-            //            ModelShow = context.ModelShows.SingleOrDefault(sc => sc.Categories == s.CategoryId)
-            //        })
-            //        .ToArray();
+                //    var categories = modelShowDto.Categories.Select(s => new ModelShowCategory
+                //        {
+                //            ModelShow = context.ModelShows.SingleOrDefault(sc => sc.Categories == s.CategoryId)
+                //        })
+                //        .ToArray();
 
-            //    var train = new Train
-            //    {
-            //        TrainNumber = trainDto.TrainNumber,
-            //        Type = type,
-            //        TrainSeats = trainSeats
-            //    };
+                //    var train = new Train
+                //    {
+                //        TrainNumber = trainDto.TrainNumber,
+                //        Type = type,
+                //        TrainSeats = trainSeats
+                //    };
 
-            //    validTrains.Add(train);
+                //    validTrains.Add(train);
 
-            //    sb.AppendLine(string.Format(SuccessMessage, trainDto.TrainNumber));
+                //    sb.AppendLine(string.Format(SuccessMessage, trainDto.TrainNumber));
             }
 
             //context.Trains.AddRange(validTrains);
