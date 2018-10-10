@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
@@ -216,6 +218,51 @@ namespace Scalemodels.DataProcessor
             }
 
             context.Tools.AddRange(validTools);
+            context.SaveChanges();
+            return "All good";
+        }
+
+        public static string ImportPaints(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedPaints = JsonConvert.DeserializeObject<PaintDto[]>(jsonString);
+
+            var validPaints = new HashSet<PaintAndConsumable>();
+
+            foreach (var paintDto in deserializedPaints)
+            {
+                var manifacturer = context.Manifacturers.FirstOrDefault(m => m.Name == paintDto.Manifacturer);
+
+                if (manifacturer == null)
+                {
+                    manifacturer = new Manifacturer
+                    {
+                        Name = paintDto.Manifacturer
+                    };
+                    context.Manifacturers.Add(manifacturer);
+                    context.SaveChanges();
+                }
+
+                DateTime? dateOfPurchase = null;
+                if (!string.IsNullOrWhiteSpace(paintDto.DateOfPurchase))
+                {
+                    dateOfPurchase = DateTime.ParseExact(paintDto.DateOfPurchase, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+                }
+                
+                var paint = new PaintAndConsumable()
+                {
+                    Name = paintDto.Name,
+                    Manifacturer = manifacturer,
+                    Price = paintDto.Price,
+                    DateOfPurchase = dateOfPurchase,
+                    ManifacturerNumber = paintDto.ManifacturerNumber,
+                    Coverage = paintDto.Coverage,
+                    Type = paintDto.Type
+                };
+
+                validPaints.Add(paint);
+            }
+
+            context.PaintsAndConsumables.AddRange(validPaints);
             context.SaveChanges();
             return "All good";
         }

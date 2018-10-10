@@ -24,6 +24,7 @@ namespace Scalemodels.App
             Deserializer.ImportWishList(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\WishList.json"));
             Deserializer.ImportVarnishes(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\Varnishes.json"));
             Deserializer.ImportTools(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\Tools.json"));
+            Deserializer.ImportPaints(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\PaintAndConsumable.json"));
         }
     }
 }

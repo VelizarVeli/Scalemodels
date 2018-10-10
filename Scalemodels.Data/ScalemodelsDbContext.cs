@@ -24,6 +24,7 @@ namespace Scalemodels.Data
         public DbSet<ModelShowCategory> ModelShowCategories { get; set; }
         public DbSet<Varnish> Varnishes { get; set; }
         public DbSet<Tool> Tools { get; set; }
+        public DbSet<PaintAndConsumable> PaintsAndConsumables { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
