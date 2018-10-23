@@ -2,12 +2,10 @@
 
 namespace Scalemodels.DataProcessor.Dto
 {
-    public class WishListDto
+    public class WishListDto : BaseDto
     {
         [Required]
         public string Name { get; set; }
-
-        public string Manifacturer { get; set; }
 
         [Required]
         public string FactoryNumber { get; set; }

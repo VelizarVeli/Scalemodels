@@ -3,13 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.DataProcessor.Dto
 {
-    public class VarnishDto
+    public class VarnishDto : BaseDto
     {
         [Required]
         public string Name { get; set; }
-
-        [Required]
-        public string Manifacturer { get; set; }
 
         [Required]
         public decimal Price { get; set; }

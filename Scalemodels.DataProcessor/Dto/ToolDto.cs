@@ -2,11 +2,9 @@
 
 namespace Scalemodels.DataProcessor.Dto
 {
-    public class ToolDto
+    public class ToolDto : BaseDto
     {
         public string Name { get; set; }
-
-        public string Manifacturer { get; set; }
 
         public decimal Price { get; set; }
 

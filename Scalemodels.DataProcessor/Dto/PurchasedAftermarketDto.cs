@@ -3,12 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.DataProcessor.Dto
 {
-    public class PurchasedAftermarketDto
+    public class PurchasedAftermarketDto : BaseDto
     {
         [Required]
         public string ProductName { get; set; }
-
-        public string Manifacturer { get; set; }
 
         [Required]
         [Range(typeof(decimal), "0.00", "79228162514264337593543950335")]

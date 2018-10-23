@@ -1,10 +1,8 @@
 ﻿namespace Scalemodels.DataProcessor.Dto
 {
-   public class PaintDto
+    public class PaintDto : BaseDto
     {
         public string Name { get; set; }
-
-        public string Manifacturer { get; set; }
 
         public string ManifacturerNumber { get; set; }
 
