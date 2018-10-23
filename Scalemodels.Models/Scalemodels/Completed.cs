@@ -5,7 +5,7 @@ namespace Scalemodels.Models
 {
     public class Completed : BaseModel<int>
     {
-        //TODO: Seed the items from Google Drive
+        //TODO: Seed  the items from Google Drive
 
         public Completed()
         {
