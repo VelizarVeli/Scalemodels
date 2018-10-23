@@ -6,6 +6,8 @@ namespace Scalemodels.Models
 {
     public class AvailableModel : BaseModel<int>
     {
+        //TODO: Seed the items from Google Drive
+
         public AvailableModel()
         {
             this.PurchasedAftermarket = new List<ModelsAftermarket>();

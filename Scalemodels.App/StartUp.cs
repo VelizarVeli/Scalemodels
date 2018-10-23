@@ -17,6 +17,8 @@ namespace Scalemodels.App
             }
         }
 
+        //TODO: Automate the path
+
         private static void ImportEntities(ScalemodelsDbContext context, string baseDir = @"..\Datasets\")
         {
             Deserializer.ImportManifacturers(context, File.ReadAllText(@"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\Manifacturers.json"));

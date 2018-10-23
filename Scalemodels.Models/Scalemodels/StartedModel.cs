@@ -6,6 +6,8 @@ namespace Scalemodels.Models
 {
     public class StartedModel : BaseModel<int>
     {
+        //TODO: Seed the items from Google Drive
+
         public string Name { get; set; }
 
         public string Scale { get; set; }

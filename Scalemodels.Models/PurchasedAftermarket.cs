@@ -6,6 +6,8 @@ namespace Scalemodels.Models
 {
    public class PurchasedAftermarket : BaseModel<int>
     {
+        //TODO: Update the information with the newly purchased items
+
         public PurchasedAftermarket()
         {
             this.Models = new List<ModelsAftermarket>();
