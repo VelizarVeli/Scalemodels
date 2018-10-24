@@ -7,3 +7,9 @@ Later I'm planning to add ASP.Net part for better visualization.
 
 
 <img src="https://github.com/VelizarVeli/Scalemodels/blob/master/Datasets/IMG_2635.JPG">
+
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
