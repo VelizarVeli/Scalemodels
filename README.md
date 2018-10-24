@@ -1,6 +1,6 @@
 
 
-<div background-image:url(https://github.com/VelizarVeli/Scalemodels/blob/master/Datasets/IMG_2635.JPG);>
+<div>
    
 # Scalemodels
 
@@ -13,9 +13,3 @@ Later I'm planning to add ASP.Net part for better visualization.
 <img src="https://github.com/VelizarVeli/Scalemodels/blob/master/Datasets/IMG_2635.JPG">
 
 </div>
-#container {
-    background-image:url(yourimage.jpg);
-    background-position:center;
-    width:700px;
-    height:400px;
-}
