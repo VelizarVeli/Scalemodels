@@ -1,3 +1,7 @@
+
+
+<div id="container">
+   
 # Scalemodels
 
 <h3>My scalemodeling hobby</h3>
@@ -8,6 +12,7 @@ Later I'm planning to add ASP.Net part for better visualization.
 
 <img src="https://github.com/VelizarVeli/Scalemodels/blob/master/Datasets/IMG_2635.JPG">
 
+</div>
 
 img {
     opacity: 0.5;
