@@ -6,7 +6,4 @@ The project includes the data which I collected in Google sheets for all the yea
 Later I'm planning to add ASP.Net part for better visualization.
 
 
-[logo]: https://drive.google.com/drive/folders/11IbGSx--I0TUZ4NL0mxqb-1FrbbwipqP.jpeg "Logo Title Text 2"
-
-
-[[https://drive.google.com/drive/folders/11IbGSx--I0TUZ4NL0mxqb-1FrbbwipqP|alt=octocat]]
+[logo]: https://github.com/VelizarVeli/Scalemodels/blob/master/Datasets/IMG_2635.JPG?raw=true "Logo Title Text 2"
