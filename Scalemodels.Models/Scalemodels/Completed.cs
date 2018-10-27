@@ -31,6 +31,6 @@ namespace Scalemodels.Models
 
         public ICollection<CompletedModelShow> ModelShowsParticipatedIn { get; set; }
 
-        public ICollection<CompletedAftermarket> UsedAftermarkets{ get; set; }
+        public ICollection<CompletedAftermarket> UsedAftermarket{ get; set; }
     }
 }

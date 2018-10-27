@@ -24,7 +24,7 @@
     "DateOfPurchase": "13.01.2012",
     "FactoryNumber": "P72062",
     "Category": "фотоец",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Panzerkampfwagen IV Ausf.J - fenders (for REVELL kit)",
@@ -33,7 +33,7 @@
     "DateOfPurchase": "13.01.2012",
     "FactoryNumber": "P72063",
     "Category": "фотоец",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Panzerkampfwagen IV Ausf.J - side skirts (for REVELL kit)",
@@ -42,7 +42,7 @@
     "DateOfPurchase": "13.01.2012",
     "FactoryNumber": "P72064",
     "Category": "фотоец",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Panzer IV - tracks (for REVELL kit)",
@@ -58,7 +58,7 @@
     "Manifacturer": "RB Models",
     "Price": 0.8,
     "DateOfPurchase": "28.02.2012",
-    "FactoryNumber": 8408,
+    "FactoryNumber": " ",
     "Category": "метална част",
     "Placement": "В кутия La-7 EDUARD Pz IVJ"
   },
@@ -96,7 +96,7 @@
     "DateOfPurchase": "09.11.2012",
     "FactoryNumber": "AM72009",
     "Category": "метално оръдие",
-    "Placement": "Bf 109 ICM"
+    "Placement": 109
   },
   {
     "ProductName": "Bf 109 G5 - G14, K armament set (MG 131 tips) & Pitot Tube",
@@ -195,7 +195,7 @@
     "DateOfPurchase": "24.04.2009",
     "FactoryNumber": "72B23",
     "Category": "метално оръдие",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "8,8cm KwK 43 L/71 for Tiger II, Jagdpanther",
@@ -204,7 +204,7 @@
     "DateOfPurchase": "24.04.2009",
     "FactoryNumber": "72B08",
     "Category": "метално оръдие",
-    "Placement": "King Tiger Revell III вариант"
+    "Placement": 46
   },
   {
     "ProductName": "2cm Flakvierling 38",
@@ -222,7 +222,7 @@
     "DateOfPurchase": "24.04.2009",
     "FactoryNumber": "ET14411",
     "Category": "фотоец",
-    "Placement": "Airbus A319 REVELL"
+    "Placement": 11
   },
   {
     "ProductName": "Zimmerit Tiger II Ausf B Henshel",
@@ -258,7 +258,7 @@
     "DateOfPurchase": "27.05.2009",
     "FactoryNumber": "SM72066",
     "Category": "маска",
-    "Placement": "Bf 109 ICM"
+    "Placement": 109
   },
   {
     "ProductName": "85mm D-5T for T-34/85",
@@ -267,7 +267,7 @@
     "DateOfPurchase": "07.05.2009",
     "FactoryNumber": "72B30",
     "Category": "метално оръдие",
-    "Placement": "T-34/85 REVELL"
+    "Placement": 15
   },
   {
     "ProductName": "Bf-109G-10",
@@ -276,7 +276,7 @@
     "DateOfPurchase": "27.05.2009",
     "FactoryNumber": "СМ72049",
     "Category": "маска",
-    "Placement": "не знам къде съм я използвал"
+    "Placement": 6
   },
   {
     "ProductName": "Bf 109 G-10 Cockpit",
@@ -285,7 +285,7 @@
     "DateOfPurchase": "27.05.2009",
     "FactoryNumber": 7143,
     "Category": "смола",
-    "Placement": "Bf 109 G-10 FINE MOLDS"
+    "Placement": 77
   },
   {
     "ProductName": "Bf 109 G Intake Scoop and Tall Tail Wheel",
@@ -294,7 +294,7 @@
     "DateOfPurchase": "27.05.2009",
     "FactoryNumber": "QB72038",
     "Category": "смола",
-    "Placement": "Bf 109 G-10 FINE MOLDS"
+    "Placement": 77
   },
   {
     "ProductName": "Bf 109G-10 propeller",
@@ -303,7 +303,7 @@
     "DateOfPurchase": "27.05.2009",
     "FactoryNumber": "QB72019",
     "Category": "смола",
-    "Placement": "Bf 109 G-10 FINE MOLDS"
+    "Placement": 77
   },
   {
     "ProductName": "CSA decals for Airbus A319",
@@ -348,7 +348,7 @@
     "DateOfPurchase": "04.12.2009",
     "FactoryNumber": 7054,
     "Category": "смола",
-    "Placement": "Ju-87 G2 ACADEMY"
+    "Placement": 95
   },
   {
     "ProductName": "Exhausts for Pz.Kpfw IV ",
@@ -375,7 +375,7 @@
     "DateOfPurchase": "11.12.2009",
     "FactoryNumber": "P72016",
     "Category": "фотоец",
-    "Placement": "T-34/85 REVELL"
+    "Placement": 15
   },
   {
     "ProductName": "Heinkel He-177A",
@@ -393,7 +393,7 @@
     "DateOfPurchase": "11.12.2009",
     "FactoryNumber": "P72047",
     "Category": "фотоец",
-    "Placement": "Einheits-Diesel MAC"
+    "Placement": 45
   },
   {
     "ProductName": "Messerschmitt Bf-109E",
@@ -411,7 +411,7 @@
     "DateOfPurchase": "11.12.2009",
     "FactoryNumber": "S72173",
     "Category": "фотоец",
-    "Placement": "Bf 109G-14 ACADEMY"
+    "Placement": 20
   },
   {
     "ProductName": "Маса и легло",
@@ -420,7 +420,7 @@
     "DateOfPurchase": "27.09.2010",
     "FactoryNumber": "",
     "Category": "фотоец",
-    "Placement": "сграда на Miniart"
+    "Placement": 47
   },
   {
     "ProductName": "картечници за He-111",
@@ -456,7 +456,7 @@
     "DateOfPurchase": "18.12.2010",
     "FactoryNumber": "QB72266",
     "Category": "смола",
-    "Placement": "Bf 109 G-10 FINE MOLDS"
+    "Placement": 77
   },
   {
     "ProductName": "Airbus A319 Exterior Set",
@@ -478,7 +478,7 @@
   },
   {
     "ProductName": "декали за Hawker Hurricane Mk II",
-    "Manifacturer": "AML Decals",
+    "Manifacturer": "",
     "Price": 9.7,
     "DateOfPurchase": "27.01.2011",
     "FactoryNumber": "",
@@ -528,7 +528,7 @@
     "DateOfPurchase": "13.12.2012",
     "FactoryNumber": "BRL72002",
     "Category": "фотоец",
-    "Placement": "#REF!"
+    "Placement": "Messerschmitt Bf-109 G-10 Regensburg Production"
   },
   {
     "ProductName": "Table and chairs",
@@ -537,7 +537,7 @@
     "DateOfPurchase": "13.12.2012",
     "FactoryNumber": "BRL72013",
     "Category": "фотоец",
-    "Placement": "#REF!"
+    "Placement": "Messerschmitt Bf-109 G-10 Regensburg Production"
   },
   {
     "ProductName": "Bf 109G-10",
@@ -546,7 +546,7 @@
     "DateOfPurchase": "13.12.2012",
     "FactoryNumber": "CX172",
     "Category": "маска",
-    "Placement": "#REF!"
+    "Placement": "Messerschmitt Bf-109 G-10 Regensburg Production"
   },
   {
     "ProductName": "Messerschmitt Bf-109 G/F Markings",
@@ -564,7 +564,7 @@
     "DateOfPurchase": "13.12.2012",
     "FactoryNumber": "AM72010",
     "Category": "метално оръдие",
-    "Placement": "#REF!"
+    "Placement": "Messerschmitt Bf-109 F-4 "
   },
   {
     "ProductName": "Kingtiger ammo wooden crates",
@@ -604,7 +604,7 @@
   },
   {
     "ProductName": "Bulgarian Air Force Stencil and Markings",
-    "Manifacturer": "Стопос",
+    "Manifacturer": "",
     "Price": 16.11,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "",
@@ -617,7 +617,7 @@
     "Price": 17.64,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -626,7 +626,7 @@
     "Price": 8.91,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "",
-    "Category": "",
+    "Category": "смола",
     "Placement": ""
   },
   {
@@ -635,7 +635,7 @@
     "Price": 17.64,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "P72147",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -644,7 +644,7 @@
     "Price": 10.26,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "P72148",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -653,7 +653,7 @@
     "Price": 7.38,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "P72149",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -662,7 +662,7 @@
     "Price": 12.96,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -671,7 +671,7 @@
     "Price": 17.64,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -680,7 +680,7 @@
     "Price": 7.38,
     "DateOfPurchase": "13.04.2013",
     "FactoryNumber": "",
-    "Category": "",
+    "Category": "фотоец",
     "Placement": ""
   },
   {
@@ -689,7 +689,7 @@
     "Price": 8,
     "DateOfPurchase": "17.07.2013",
     "FactoryNumber": "",
-    "Category": "",
+    "Category": "смола",
     "Placement": ""
   },
   {
@@ -982,7 +982,7 @@
   },
   {
     "ProductName": "български декали",
-    "Manifacturer": "Стопос",
+    "Manifacturer": "",
     "Price": 7.11,
     "DateOfPurchase": "03.05.2014",
     "FactoryNumber": "",
@@ -1104,7 +1104,7 @@
     "DateOfPurchase": "28.06.2014",
     "FactoryNumber": 72017,
     "Category": "фотоец",
-    "Placement": "Antiaircraft tank Sdkfz 140 UM"
+    "Placement": 91
   },
   {
     "ProductName": "Krupp L2H 143 Kfz.70",
@@ -1320,7 +1320,7 @@
     "DateOfPurchase": "02.08.2014",
     "FactoryNumber": "SS453",
     "Category": "фотоец",
-    "Placement": "Bf 109 ICM"
+    "Placement": 109
   },
   {
     "ProductName": "Bf 109E/F wheels & paint masks",
@@ -1329,7 +1329,7 @@
     "DateOfPurchase": "23.08.2014",
     "FactoryNumber": 7245,
     "Category": "смола",
-    "Placement": "Bf 109 ICM"
+    "Placement": 109
   },
   {
     "ProductName": "German 7,92mm guns MG 17",
@@ -1455,7 +1455,7 @@
     "DateOfPurchase": "23.08.2014",
     "FactoryNumber": 2054,
     "Category": "смола",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Bf 109G-6 - Engine set for Airf.",
@@ -1518,7 +1518,7 @@
     "DateOfPurchase": "13.09.2014",
     "FactoryNumber": "А7218а",
     "Category": "метал",
-    "Placement": "German Machine Gun with Crew+Pz IV Revell"
+    "Placement": 100
   },
   {
     "ProductName": "MG-34 machine gun with bipod",
@@ -1527,7 +1527,7 @@
     "DateOfPurchase": "13.09.2014",
     "FactoryNumber": "А7218",
     "Category": "метал",
-    "Placement": "Jagdpanzer 38(t)  ATTACK"
+    "Placement": 90
   },
   {
     "ProductName": "Flakpanzer IV Ostwind - turret (for HASEGAWA kit)",
@@ -1779,7 +1779,7 @@
     "DateOfPurchase": "28.01.2015",
     "FactoryNumber": 72022,
     "Category": "фотоец",
-    "Placement": "Antiaircraft tank Sdkfz 140 UM"
+    "Placement": 91
   },
   {
     "ProductName": "Heinkel He-177 Engine Set for Revell",
@@ -1824,7 +1824,7 @@
     "DateOfPurchase": "25.03.2015",
     "FactoryNumber": "72A01",
     "Category": "метално оръдие",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Barrels for 13 MG131",
@@ -1887,7 +1887,7 @@
     "DateOfPurchase": "01.06.2015",
     "FactoryNumber": "72L34",
     "Category": "метално оръдие",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "Flak 38 (for MAC 72063) barrel",
@@ -1914,7 +1914,7 @@
     "DateOfPurchase": "01.06.2015",
     "FactoryNumber": "P72028",
     "Category": "фотоец",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "JUNKERS Ju-87 D (for ITALERI kit)",
@@ -2049,7 +2049,7 @@
     "DateOfPurchase": "22.08.2015",
     "FactoryNumber": "QB72399",
     "Category": "смола",
-    "Placement": "Bf 109 ICM"
+    "Placement": 109
   },
   {
     "ProductName": "Seatbelts Luftwaffe fighters Super",
@@ -2094,7 +2094,7 @@
     "DateOfPurchase": "18.10.2015",
     "FactoryNumber": "72B54",
     "Category": "метално оръдие",
-    "Placement": "Jagdpanzer 38(t)  ATTACK"
+    "Placement": 90
   },
   {
     "ProductName": "5cm KwK 39 L60 PzKpfw. III M",
@@ -2112,7 +2112,7 @@
     "DateOfPurchase": "01.11.2015",
     "FactoryNumber": "A7221",
     "Category": "метално оръдие",
-    "Placement": "в кутия на Dornier ICM"
+    "Placement": "в кутия на Sb 2M ICM"
   },
   {
     "ProductName": "B-17 Flying Fortress Bomb Bay set",
@@ -2193,7 +2193,7 @@
     "DateOfPurchase": "30.11.2015",
     "FactoryNumber": "S72043",
     "Category": "смола",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Sprockets for Pz.IV, 40 cm tracks",
@@ -2202,7 +2202,7 @@
     "DateOfPurchase": "30.11.2015",
     "FactoryNumber": "S72151",
     "Category": "смола",
-    "Placement": "Pz IV J REVELL"
+    "Placement": 100
   },
   {
     "ProductName": "Tracks for Pz.VI Tiger I, middle",
@@ -2238,7 +2238,7 @@
     "DateOfPurchase": "30.11.2015",
     "FactoryNumber": "S72165",
     "Category": "смола",
-    "Placement": "Jagdpanzer 38(t)  ATTACK"
+    "Placement": 90
   },
   {
     "ProductName": "Tracks for Pz.38(t) late",
@@ -2247,7 +2247,7 @@
     "DateOfPurchase": "30.11.2015",
     "FactoryNumber": "S72163",
     "Category": "смола",
-    "Placement": "Antiaircraft tank Sdkfz 140 UM"
+    "Placement": 91
   },
   {
     "ProductName": "Extended waffle tracks for T-34",
@@ -2265,7 +2265,7 @@
     "DateOfPurchase": "30.11.2015",
     "FactoryNumber": "S72164",
     "Category": "смола",
-    "Placement": "Bergepanzer 38(t) Hetzer ATTACK"
+    "Placement": 89
   },
   {
     "ProductName": "Tracks for T-34 mod.1942 Factory No112 \"Red Sormovo\"",
@@ -2400,7 +2400,7 @@
     "DateOfPurchase": "26.02.2016",
     "FactoryNumber": 72352,
     "Category": "смола",
-    "Placement": "Hetzer Star ATTACK"
+    "Placement": 90
   },
   {
     "ProductName": "Bf109G color",
@@ -2508,7 +2508,7 @@
     "DateOfPurchase": "19.03.2016",
     "FactoryNumber": "T72067",
     "Category": "смола",
-    "Placement": "Pz II FTF"
+    "Placement": 69
   },
   {
     "ProductName": "Opel Blitz accessories set",
@@ -2670,7 +2670,7 @@
     "DateOfPurchase": "21.07.2016",
     "FactoryNumber": 72090,
     "Category": "метално оръдие",
-    "Placement": "Ju-87 Stuka ACADEMY"
+    "Placement": 95
   },
   {
     "ProductName": "Mi-24V Hind E Interior",
@@ -2688,7 +2688,7 @@
     "DateOfPurchase": "24.08.2016",
     "FactoryNumber": "CX144",
     "Category": "маска",
-    "Placement": "Ju-87 Stuka ACADEMY"
+    "Placement": 95
   },
   {
     "ProductName": "7,5 cm PAK-40 Panzerabwehrkanone Detail Set",
@@ -2931,7 +2931,7 @@
     "DateOfPurchase": "06.03.2017",
     "FactoryNumber": "S72051",
     "Category": "смола",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "Sprockets for KV-1/2",
@@ -2940,7 +2940,7 @@
     "DateOfPurchase": "06.03.2017",
     "FactoryNumber": "S72301",
     "Category": "смола",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "Wheels for KV, Cast reinforced, January 1942, type 1 with round hub",
@@ -2949,7 +2949,7 @@
     "DateOfPurchase": "06.03.2017",
     "FactoryNumber": "S72037",
     "Category": "смола",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "Sprockets for Tiger I, type 1",
@@ -3444,7 +3444,7 @@
     "DateOfPurchase": "02.07.2017",
     "FactoryNumber": "ER7214",
     "Category": "смола",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "Towing cable set for T-34/75 and SU-85/100/122",
@@ -3525,7 +3525,7 @@
     "DateOfPurchase": "20.07.2017",
     "FactoryNumber": "72A02",
     "Category": "метално оръдие",
-    "Placement": "KV-1 TRUMPETER"
+    "Placement": 106
   },
   {
     "ProductName": "1.4m aerial",
@@ -3813,7 +3813,7 @@
     "DateOfPurchase": "08.12.2017",
     "FactoryNumber": 7129,
     "Category": "смола",
-    "Placement": "Bf 109 ICM"
+    "Placement": 109
   },
   {
     "ProductName": "Mi-24A cockpit set",
@@ -3984,7 +3984,7 @@
     "DateOfPurchase": "05.05.2018",
     "FactoryNumber": "QB72324",
     "Category": "смола",
-    "Placement": "Bf 109E ICM"
+    "Placement": 109
   },
   {
     "ProductName": "Mi-26 Halo exterior",
@@ -4192,5 +4192,158 @@
     "FactoryNumber": 72038,
     "Category": "смола",
     "Placement": ""
+  },
+  {
+    "ProductName": "75mm KwK 40 L/43 Pz.Kpfw. IV Ausf. F2",
+    "Manifacturer": "RB Model",
+    "Price": 4.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "72B17",
+    "Category": "метално оръдие",
+    "Placement": "В кутия на Dragon Pz IV (G)"
+  },
+  {
+    "ProductName": "ShKAS Machine Gun",
+    "Manifacturer": "Mini World",
+    "Price": 9.9,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 7204,
+    "Category": "метално оръдие",
+    "Placement": "в кутия на Sb 2M ICM"
+  },
+  {
+    "ProductName": "Boeing 737-800 (Revell)",
+    "Manifacturer": "Extratech",
+    "Price": 16.2,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 14408,
+    "Category": "фотоец",
+    "Placement": "в кутия на Боинг"
+  },
+  {
+    "ProductName": "Boeing 737-800 (Revell)",
+    "Manifacturer": "Extratech",
+    "Price": 16.2,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 14408,
+    "Category": "фотоец",
+    "Placement": "в кутия на Боинг"
+  },
+  {
+    "ProductName": "Anti-tank barages",
+    "Manifacturer": "Extratech",
+    "Price": 17.3,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 72025,
+    "Category": "фотоец",
+    "Placement": ""
+  },
+  {
+    "ProductName": "Bf 109G-10 cockpit set",
+    "Manifacturer": "Aires",
+    "Price": 16.9,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 7143,
+    "Category": "смола",
+    "Placement": ""
+  },
+  {
+    "ProductName": "Bf 109G-2 cockpit set",
+    "Manifacturer": "Aires",
+    "Price": 16.9,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 7259,
+    "Category": "смола",
+    "Placement": "в кутия Bf 109 G-2 Aces"
+  },
+  {
+    "ProductName": "Bf 109E control surfaces",
+    "Manifacturer": "Aires",
+    "Price": 8.8,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 7129,
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109E control surfaces",
+    "Manifacturer": "Aires",
+    "Price": 8.8,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 7129,
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109E control surfaces",
+    "Manifacturer": "Aires",
+    "Price": 8.8,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": 7129,
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109G-10 propeller",
+    "Manifacturer": "Quickboost",
+    "Price": 7.3,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72019",
+    "Category": "смола",
+    "Placement": ""
+  },
+  {
+    "ProductName": "Bf 109E control lever",
+    "Manifacturer": "Quickboost",
+    "Price": 5.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72470",
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109E exhaust",
+    "Manifacturer": "Quickboost",
+    "Price": 5.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72399",
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109E exhaust",
+    "Manifacturer": "Quickboost",
+    "Price": 5.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72399",
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109E exhaust",
+    "Manifacturer": "Quickboost",
+    "Price": 5.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72399",
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109E tailwheel",
+    "Manifacturer": "Quickboost",
+    "Price": 5.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72324",
+    "Category": "смола",
+    "Placement": "в кутия на Тамия Bf 109E"
+  },
+  {
+    "ProductName": "Bf 109F exhaust",
+    "Manifacturer": "Quickboost",
+    "Price": 5.5,
+    "DateOfPurchase": "13.10.2018",
+    "FactoryNumber": "QB72219",
+    "Category": "смола",
+    "Placement": "в кутия на Fine Molds Bf 109F"
   }
 ]

@@ -60,6 +60,7 @@ namespace Scalemodels.DataProcessor
 
             var validAftermarketItems = new List<PurchasedAftermarket>();
 
+            //TODO: Implement int check for Placement and connect with Completed models after seedin Completed
 
             foreach (var aftermarketDto in deserializedAftermarket)
             {
@@ -267,6 +268,7 @@ namespace Scalemodels.DataProcessor
             return "All good";
         }
 
+        //TODO: Import modelshows
         public static string ImportModelShows(ScalemodelsDbContext context, string jsonString)
         {
             var deserializedModelShows = JsonConvert.DeserializeObject<ModelShowDto[]>(jsonString, new JsonSerializerSettings()

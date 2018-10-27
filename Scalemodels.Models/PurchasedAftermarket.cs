@@ -11,6 +11,8 @@ namespace Scalemodels.Models
         public PurchasedAftermarket()
         {
             this.Models = new List<ModelsAftermarket>();
+
+            this.CompletedModels = new List<CompletedAftermarket>();
         }
 
         [Required]
