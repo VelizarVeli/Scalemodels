@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.Models
 {
-   public class PurchasedAftermarket : BaseModel<int>
+    public class PurchasedAftermarket : BaseModel<int>
     {
         //TODO: Update the information with the newly purchased items
 
@@ -34,5 +34,7 @@ namespace Scalemodels.Models
         public string Placement { get; set; }
 
         public ICollection<ModelsAftermarket> Models { get; set; }
+
+        public ICollection<CompletedAftermarket> CompletedModels { get; set; }
     }
 }

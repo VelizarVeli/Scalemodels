@@ -30,5 +30,7 @@ namespace Scalemodels.Models
         public string BestCompanyOffer { get; set; }
 
         public ICollection<CompletedModelShow> ModelShowsParticipatedIn { get; set; }
+
+        public ICollection<CompletedAftermarket> UsedAftermarkets{ get; set; }
     }
 }

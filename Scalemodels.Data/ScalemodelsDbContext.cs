@@ -25,6 +25,7 @@ namespace Scalemodels.Data
         public DbSet<Varnish> Varnishes { get; set; }
         public DbSet<Tool> Tools { get; set; }
         public DbSet<PaintAndConsumable> PaintsAndConsumables { get; set; }
+        public DbSet<CompletedAftermarket> CompletedAftermarkets { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -40,11 +41,23 @@ namespace Scalemodels.Data
             modelBuilder.Entity<ModelsAftermarket>()
                 .HasKey(ma => new { ma.AftermarketId, ma.ModelId });
 
-
+            modelBuilder.Entity<CompletedAftermarket>()
+                .HasKey(ca => new { ca.AftermarketId, ca.ModelId });
 
             modelBuilder.Entity<CompletedModelShow>()
                 .HasKey(msc => new { msc.CompletedId, msc.ModelShowId });
 
+            modelBuilder.Entity<CompletedAftermarket>()
+                .HasOne(a => a.Aftermarket)
+                .WithMany(ua => ua.CompletedModels)
+                .HasForeignKey(fk => fk.AftermarketId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<CompletedAftermarket>()
+                .HasOne(m => m.Model)
+                .WithMany(a => a.UsedAftermarkets)
+                .HasForeignKey(fk => fk.ModelId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<ModelsAftermarket>()
                 .HasOne(a => a.Aftermarket)
