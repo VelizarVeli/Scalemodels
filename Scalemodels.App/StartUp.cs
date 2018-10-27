@@ -22,6 +22,7 @@ namespace Scalemodels.App
         private static void ImportEntities(ScalemodelsDbContext context, string baseDir = @"C:\Users\Google\Documents\Proj\Scalemodels\Datasets\")
         {
             Deserializer.ImportManifacturers(context, File.ReadAllText(baseDir + "Manifacturers.json"));
+            Deserializer.ImportCompletedModels(context, File.ReadAllText(baseDir + "Completed.json"));
             Deserializer.ImportAftermarket(context, File.ReadAllText(baseDir + "Aftermarket.json"));
             Deserializer.ImportWishList(context, File.ReadAllText(baseDir + "WishList.json"));
             Deserializer.ImportVarnishes(context, File.ReadAllText(baseDir + "Varnishes.json"));

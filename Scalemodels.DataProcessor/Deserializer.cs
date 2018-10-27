@@ -108,7 +108,7 @@ namespace Scalemodels.DataProcessor
 
             var deserializedManifacturers = JsonConvert.DeserializeObject<ManifacturerDto[]>(jsonString);
 
-            var ValidManifacturers = new HashSet<Manifacturer>();
+            var validManifacturers = new HashSet<Manifacturer>();
 
             foreach (var manifacturerDto in deserializedManifacturers)
             {
@@ -118,7 +118,7 @@ namespace Scalemodels.DataProcessor
                     continue;
                 }
 
-                var manifacturerAlreadyExists = ValidManifacturers.Any(m => m.Name == manifacturerDto.Manifacturer);
+                var manifacturerAlreadyExists = validManifacturers.Any(m => m.Name == manifacturerDto.Manifacturer);
                 if (manifacturerAlreadyExists)
                 {
                     sb.AppendLine(FailureMessage);
@@ -130,16 +130,62 @@ namespace Scalemodels.DataProcessor
                     Name = manifacturerDto.Manifacturer
                 };
 
-                ValidManifacturers.Add(manifacturer);
+                validManifacturers.Add(manifacturer);
 
                 sb.AppendLine(string.Format(SuccessMessage, manifacturerDto.Manifacturer));
             }
 
-            context.Manifacturers.AddRange(ValidManifacturers);
+            context.Manifacturers.AddRange(validManifacturers);
             context.SaveChanges();
 
             var result = sb.ToString();
             return result;
+        }
+
+        public static string ImportCompletedModels(ScalemodelsDbContext context, string jsonString)
+        {
+            var deserializedCompletedModels = JsonConvert.DeserializeObject<CompletedDto[]>(jsonString,
+                new IsoDateTimeConverter { DateTimeFormat = "dd.MM.yyyy" });
+
+            var validCompletedModels = new List<Completed>();
+
+            foreach (var completedModelDto in deserializedCompletedModels)
+            {
+                if (!IsValid(completedModelDto))
+                {
+                    continue;
+                }
+
+                var manifacturer = context.Manifacturers
+                    .FirstOrDefault(m => m.Name == completedModelDto.Manifacturer);
+
+                if (manifacturer == null)
+                {
+                    manifacturer = new Manifacturer
+                    {
+                        Name = completedModelDto.Manifacturer
+                    };
+                    context.Manifacturers.Add(manifacturer);
+                    context.SaveChanges();
+                }
+
+                var completed = new Completed
+                {
+                    Name = completedModelDto.Name,
+                    Scale = completedModelDto.Scale,
+                    Manifacturer = manifacturer,
+                    FactoryNumber = completedModelDto.FactoryNumber,
+                    Placement = completedModelDto.Placement,
+                    BestCompanyOffer = completedModelDto.BestCompanyOffer
+                };
+
+                validCompletedModels.Add(completed);
+            }
+
+            context.Completed.AddRange(validCompletedModels);
+            context.SaveChanges();
+
+            return "All Good!";
         }
 
         public static string ImportVarnishes(ScalemodelsDbContext context, string jsonString)

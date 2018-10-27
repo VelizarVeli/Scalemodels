@@ -10,6 +10,8 @@ namespace Scalemodels.Models
         public Completed()
         {
             this.ModelShowsParticipatedIn = new List<CompletedModelShow>();
+
+            this.UsedAftermarket = new List<CompletedAftermarket>();
         }
 
         [Required]
@@ -28,6 +30,8 @@ namespace Scalemodels.Models
         public string Placement { get; set; }
 
         public string BestCompanyOffer { get; set; }
+
+        //TODO: Add all the properties from the Sheet
 
         public ICollection<CompletedModelShow> ModelShowsParticipatedIn { get; set; }
 

@@ -47,17 +47,17 @@ namespace Scalemodels.Data
             modelBuilder.Entity<CompletedModelShow>()
                 .HasKey(msc => new { msc.CompletedId, msc.ModelShowId });
 
-            //modelBuilder.Entity<CompletedAftermarket>()
-            //    .HasOne(a => a.Aftermarket)
-            //    .WithMany(ua => ua.CompletedModels)
-            //    .HasForeignKey(fk => fk.AftermarketId)
-            //    .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<CompletedAftermarket>()
+                .HasOne(a => a.Aftermarket)
+                .WithMany(ua => ua.CompletedModels)
+                .HasForeignKey(fk => fk.AftermarketId)
+                .OnDelete(DeleteBehavior.Restrict);
 
-            //modelBuilder.Entity<CompletedAftermarket>()
-            //    .HasOne(m => m.Model)
-            //    .WithMany(a => a.UsedAftermarket)
-            //    .HasForeignKey(fk => fk.ModelId)
-            //    .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<CompletedAftermarket>()
+                .HasOne(m => m.Model)
+                .WithMany(a => a.UsedAftermarket)
+                .HasForeignKey(fk => fk.ModelId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<ModelsAftermarket>()
                 .HasOne(a => a.Aftermarket)
