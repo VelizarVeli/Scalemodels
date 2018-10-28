@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models;
 
 namespace Scalemodels.DataProcessor.Dto
 {
     public class CompletedDto : BaseDto
     {
+        public int Number { get; set; }
+
         [Required]
         public string Name { get; set; }
 

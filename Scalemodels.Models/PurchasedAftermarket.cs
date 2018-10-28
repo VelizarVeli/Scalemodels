@@ -6,11 +6,9 @@ namespace Scalemodels.Models
 {
     public class PurchasedAftermarket : BaseModel<int>
     {
-        //TODO: Update the information with the newly purchased items
-
         public PurchasedAftermarket()
         {
-            this.Models = new List<ModelsAftermarket>();
+            this.AvailableModels = new List<ModelsAftermarket>();
 
             this.CompletedModels = new List<CompletedAftermarket>();
         }
@@ -35,7 +33,7 @@ namespace Scalemodels.Models
 
         public string Placement { get; set; }
 
-        public ICollection<ModelsAftermarket> Models { get; set; }
+        public ICollection<ModelsAftermarket> AvailableModels { get; set; }
 
         public ICollection<CompletedAftermarket> CompletedModels { get; set; }
     }

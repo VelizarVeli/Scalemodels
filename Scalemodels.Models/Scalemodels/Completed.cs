@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodels.Models
@@ -13,6 +14,8 @@ namespace Scalemodels.Models
 
             this.UsedAftermarket = new List<CompletedAftermarket>();
         }
+
+        public int Number { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -31,7 +34,26 @@ namespace Scalemodels.Models
 
         public string BestCompanyOffer { get; set; }
 
-        //TODO: Add all the properties from the Sheet
+        public string GivenSold { get; set; }
+
+        public string PicturesLink { get; set; }
+
+        public string ForumsLink { get; set; }
+
+        public string CombinesWith { get; set; }
+
+        [Required]
+        [Range(typeof(decimal), "0.00", "79228162514264337593543950335")]
+        public decimal Price { get; set; }
+
+        [Required]
+        public DateTime DateOfPurchase { get; set; }
+
+        [Required]
+        public DateTime StartedOnDate { get; set; }
+
+        [Required]
+        public DateTime FinishedOnDate { get; set; }
 
         public ICollection<CompletedModelShow> ModelShowsParticipatedIn { get; set; }
 

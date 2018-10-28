@@ -2,7 +2,7 @@
 
 namespace Scalemodels.Models
 {
-    public class ModelsAftermarket
+    public class ModelsAftermarket : BaseModel<int>
     {
         public int ModelId { get; set; }
         [Required]

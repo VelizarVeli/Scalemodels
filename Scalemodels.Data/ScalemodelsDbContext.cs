@@ -61,7 +61,7 @@ namespace Scalemodels.Data
 
             modelBuilder.Entity<ModelsAftermarket>()
                 .HasOne(a => a.Aftermarket)
-                .WithMany(m => m.Models)
+                .WithMany(m => m.AvailableModels)
                 .HasForeignKey(fk => fk.AftermarketId)
                 .OnDelete(DeleteBehavior.Restrict);
 

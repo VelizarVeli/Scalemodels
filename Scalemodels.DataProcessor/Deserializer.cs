@@ -55,12 +55,13 @@ namespace Scalemodels.DataProcessor
 
         public static string ImportAftermarket(ScalemodelsDbContext context, string jsonString)
         {
+            //TODO: How to connect and fill the data between many-to-many
             var deserializedAftermarket = JsonConvert.DeserializeObject<PurchasedAftermarketDto[]>(jsonString,
                 new IsoDateTimeConverter { DateTimeFormat = "dd.MM.yyyy" });
 
             var validAftermarketItems = new List<PurchasedAftermarket>();
 
-            //TODO: Implement int check for Placement and connect with Completed models after seedin Completed
+            //TODO: Connect with Completed models after seedin Completed
 
             foreach (var aftermarketDto in deserializedAftermarket)
             {
@@ -93,10 +94,30 @@ namespace Scalemodels.DataProcessor
                     Placement = aftermarketDto.Placement
                 };
 
+                context.PurchasedAftermarkets.Add(aftermarket);
+                var usedInModels = new List<CompletedAftermarket>();
+                var usedInCurrentModel = aftermarketDto.Placement.Split(';');
+
+                foreach (var completedId in usedInCurrentModel)
+                {
+                    var usedInCompletedModel = int.TryParse(completedId, out int completedModel);
+
+                    if (usedInCompletedModel)
+                    {
+                        var modelsId = new CompletedAftermarket
+                        {
+                            ModelId = completedModel
+                        };
+                        usedInModels.Add(modelsId);
+                    }
+                }
+                aftermarket.CompletedModels = usedInModels;
+
+                context.SaveChanges();
                 validAftermarketItems.Add(aftermarket);
             }
 
-            context.PurchasedAftermarkets.AddRange(validAftermarketItems);
+          //  context.PurchasedAftermarkets.AddRange(validAftermarketItems);
             context.SaveChanges();
 
             return "All Good!";
@@ -294,7 +315,7 @@ namespace Scalemodels.DataProcessor
                 {
                     dateOfPurchase = DateTime.ParseExact(paintDto.DateOfPurchase, "dd.MM.yyyy", CultureInfo.InvariantCulture);
                 }
-                
+
                 var paint = new PaintAndConsumable()
                 {
                     Name = paintDto.Name,
