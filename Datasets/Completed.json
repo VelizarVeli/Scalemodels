@@ -608,7 +608,7 @@
     "CombinesWith": "",
     "Price": 14.4,
     "DateOfPurchase": "09.01.2009",
-    "StartedOnDate": "01.08.011г",
+    "StartedOnDate": "01.08.2011",
     "FinishedOnDate": "05.09.2011"
   },
   {
@@ -810,7 +810,7 @@
     "FinishedOnDate": "01.05.2013"
   },
   {
-    "Number": "",
+    "Number": "0",
     "Name": "Messerschmitt Bf-109 F2",
     "Scale": 144,
     "Manifacturer": "Zvezda",
@@ -846,7 +846,7 @@
     "FinishedOnDate": "01.09.2013"
   },
   {
-    "Number": "",
+    "Number": "0",
     "Name": "Porshe 911 turbo",
     "Scale": 24,
     "Manifacturer": "Italeri",
@@ -861,7 +861,7 @@
     "Price": 40.85,
     "DateOfPurchase": "29.03.2013",
     "StartedOnDate": "01.04.2013",
-    "FinishedOnDate": "29.04.2013г"
+    "FinishedOnDate": "29.04.2013"
   },
   {
     "Number": 47,

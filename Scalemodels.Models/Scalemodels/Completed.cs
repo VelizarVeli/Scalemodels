@@ -24,7 +24,7 @@ namespace Scalemodels.Models
         public int Scale { get; set; }
 
         public int ManifacturerId { get; set; }
-        [Required]
+       // [Required]
         public Manifacturer Manifacturer { get; set; }
 
         [Required]
@@ -47,13 +47,13 @@ namespace Scalemodels.Models
         public decimal Price { get; set; }
 
         [Required]
-        public DateTime DateOfPurchase { get; set; }
+        public DateTime? DateOfPurchase { get; set; }
 
         [Required]
-        public DateTime StartedOnDate { get; set; }
+        public DateTime? StartedOnDate { get; set; }
 
         [Required]
-        public DateTime FinishedOnDate { get; set; }
+        public DateTime? FinishedOnDate { get; set; }
 
         public ICollection<CompletedModelShow> ModelShowsParticipatedIn { get; set; }
 

@@ -93,7 +93,7 @@ namespace Scalemodels.DataProcessor
                     FactoryNumber = aftermarketDto.FactoryNumber,
                     Placement = aftermarketDto.Placement
                 };
-
+                validAftermarketItems.Add(aftermarket);
                 context.PurchasedAftermarkets.Add(aftermarket);
                 var usedInModels = new List<CompletedAftermarket>();
                 var usedInCurrentModel = aftermarketDto.Placement.Split(';');
@@ -112,12 +112,9 @@ namespace Scalemodels.DataProcessor
                     }
                 }
                 aftermarket.CompletedModels = usedInModels;
-
-                context.SaveChanges();
-                validAftermarketItems.Add(aftermarket);
             }
 
-          //  context.PurchasedAftermarkets.AddRange(validAftermarketItems);
+            context.PurchasedAftermarkets.AddRange(validAftermarketItems);
             context.SaveChanges();
 
             return "All Good!";
@@ -180,6 +177,24 @@ namespace Scalemodels.DataProcessor
                 var manifacturer = context.Manifacturers
                     .FirstOrDefault(m => m.Name == completedModelDto.Manifacturer);
 
+                DateTime? dateOfPurchase = null;
+                if (!string.IsNullOrWhiteSpace(completedModelDto.DateOfPurchase))
+                {
+                    dateOfPurchase = DateTime.ParseExact(completedModelDto.DateOfPurchase, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+                }
+
+                DateTime? startedOnDate = null;
+                if (!string.IsNullOrWhiteSpace(completedModelDto.DateOfPurchase))
+                {
+                    startedOnDate = DateTime.ParseExact(completedModelDto.StartedOnDate, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+                }
+
+                DateTime? finishedOnDate = null;
+                if (!string.IsNullOrWhiteSpace(completedModelDto.DateOfPurchase))
+                {
+                    finishedOnDate = DateTime.ParseExact(completedModelDto.FinishedOnDate, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+                }
+
                 if (manifacturer == null)
                 {
                     manifacturer = new Manifacturer
@@ -192,12 +207,21 @@ namespace Scalemodels.DataProcessor
 
                 var completed = new Completed
                 {
+                    Number = completedModelDto.Number,
                     Name = completedModelDto.Name,
                     Scale = completedModelDto.Scale,
                     Manifacturer = manifacturer,
                     FactoryNumber = completedModelDto.FactoryNumber,
+                    Price = completedModelDto.Price,
                     Placement = completedModelDto.Placement,
-                    BestCompanyOffer = completedModelDto.BestCompanyOffer
+                    BestCompanyOffer = completedModelDto.BestCompanyOffer,
+                    PicturesLink = completedModelDto.PicturesLink,
+                    ForumsLink = completedModelDto.ForumsLink,
+                    GivenSold = completedModelDto.GivenSold,
+                    CombinesWith = completedModelDto.CombinesWith,
+                    DateOfPurchase = dateOfPurchase,
+                    StartedOnDate = startedOnDate,
+                    FinishedOnDate = finishedOnDate
                 };
 
                 validCompletedModels.Add(completed);
