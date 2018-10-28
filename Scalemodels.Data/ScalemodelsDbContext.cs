@@ -42,7 +42,7 @@ namespace Scalemodels.Data
                 .HasKey(ma => new { ma.AftermarketId, ma.ModelId });
 
             modelBuilder.Entity<CompletedAftermarket>()
-                .HasKey(ca => new { ca.AftermarketId, ca.ModelId });
+                .HasKey(ca => new { ca.UsedAftermarketId, ca.CompletedModelId });
 
             modelBuilder.Entity<CompletedModelShow>()
                 .HasKey(msc => new { msc.CompletedId, msc.ModelShowId });
@@ -50,13 +50,13 @@ namespace Scalemodels.Data
             modelBuilder.Entity<CompletedAftermarket>()
                 .HasOne(a => a.Aftermarket)
                 .WithMany(ua => ua.CompletedModels)
-                .HasForeignKey(fk => fk.AftermarketId)
+                .HasForeignKey(fk => fk.UsedAftermarketId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<CompletedAftermarket>()
                 .HasOne(m => m.Model)
                 .WithMany(a => a.UsedAftermarket)
-                .HasForeignKey(fk => fk.ModelId)
+                .HasForeignKey(fk => fk.CompletedModelId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<ModelsAftermarket>()

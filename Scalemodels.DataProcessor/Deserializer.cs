@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Scalemodels.Data;
@@ -106,7 +107,7 @@ namespace Scalemodels.DataProcessor
                     {
                         var modelsId = new CompletedAftermarket
                         {
-                            ModelId = completedModel
+                            CompletedModelId = completedModel
                         };
                         usedInModels.Add(modelsId);
                     }

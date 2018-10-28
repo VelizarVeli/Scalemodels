@@ -1,6 +1,6 @@
 ﻿namespace Scalemodels.Models
 {
-    public class CompletedModelShow
+    public class CompletedModelShow : BaseModel<int>
     {
         public int CompletedId { get; set; }
         public Completed ModelCompleted { get; set; }
